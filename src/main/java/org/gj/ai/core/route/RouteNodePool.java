@@ -1,6 +1,8 @@
 package org.gj.ai.core.route;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Queue;
 
 import org.gj.ai.core.Node;
@@ -27,8 +29,8 @@ public class RouteNodePool {
 		return node;
 	}
 
-	public Queue<Node> activeNodes(int n) {
-		Queue<Node> nodes = new ArrayDeque<>();
+	public List<Node> activeNodes(int n) {
+		List<Node> nodes = new ArrayList<>();
 		for (int i = 0; i <= n - 1; i++) {
 			Node node = activeNode();
 			nodes.add(node);

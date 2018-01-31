@@ -1,15 +1,12 @@
 package org.gj.ai.core.input;
 
-public class InputWild {
-	int size=10;
+import org.gj.ai.core.Wild;
 
-	public int getSize() {
-		return size;
-	}
+public class InputWild extends Wild {
 
-	public void setSize(int size) {
-		this.size = size;
+	public InputWild() {
+		super();
+		nodes = new InputNode[w][h];
 	}
-	
 
 }
